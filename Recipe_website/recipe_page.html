@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- styles import -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/recipe.css" />
+  <!-- font import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- icon import -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <title>Recipe Hub | Recipe</title>
+</head>
+
+<body>
+  <div class="nav_container">
+    <h1 class="title"><span class="material-symbols-outlined">
+        fork_spoon
+      </span> RECIPE HUB</h1>
+    <div class="nav_bar">
+      <div class="home">
+        <a href="index.html" style="color: white; text-decoration: none; font-size: 20px">
+          <span class="material-symbols-outlined"> home </span>
+          Home</a>
+      </div>
+      <div class="recipe">
+        <a href="recipe_page.html" style="color: white; text-decoration: none; font-size: 20px"><span
+            class="material-symbols-outlined"> chef_hat</span>Recipes</a>
+      </div>
+      <div class="login">
+        <a href="login.html" style="color: white; text-decoration: none; font-size: 20px"><span
+            class="material-symbols-outlined">
+            account_circle
+          </span>login</a>
+      </div>
+      <div class="about">
+        <a href="about_us.html" style="color: white; text-decoration: none; font-size: 20px"><span
+            class="material-symbols-outlined">
+            contact_page
+          </span>About Us</a>
+      </div>
+    </div>
+  </div>
+  <h2 class="text" style="text-decoration: underline;">BREAKFAST</h2>
+
+  <div class="breakfast-section">
+
+    <div class="recipe-card Pancakes">
+      <img src="assets/Old Fashioned Pancakes.jpeg">
+      <h3>Pancakes</h3>
+      <button onclick="viewRecipe('pancakes')">View Recipe</button>
+    </div>
+
+    <div class="recipe-card Omelette">
+      <img
+        src="assets/HighResolution Photograph of an Omelette with Veggies and Cheese Isolated on White Background.jpeg">
+        <h3>Omelette</h3>
+      <button onclick="viewRecipe('omelette')">View Recipe</button>
+    </div>
+
+    <div class="recipe-card FrenchToast">
+      <img src="assets/Easy French Toast Recipe _ Classic Breakfast Favorite _Make this delicious breakfast classic right on your stovetop with just a few simple ingredients! __Ingredients_ _- 4 slices of bread _- 2 eggs _- ½ cup milk .jpeg">
+      <h3>French Toast</h3>
+      <button onclick="viewRecipe('frenchtoast')">View Recipe</button>
+    </div>
+
+    <div class="recipe-card Upma">
+      <img src="assets/Upma Recipe_- How to make rava upma at home_ - Foods And Flavors.jpeg">
+      <h3>Upma</h3>
+      <button onclick="viewRecipe('upma')">View Recipe</button>
+    </div>
+
+    <div class="recipe-card SmoothieBowl">
+      <img src="assets/download (2).jpeg">
+      <h3>Smoothie Bowl</h3>
+      <button onclick="viewRecipe('smoothiebowl')">View Recipe</button>
+    </div>
+  </div>
+    <h2 class="text" style="text-decoration: underline;">LUNCH</h2>
+<div class="lunch-section">
+
+  <div class="recipe-card ChickenCurry">
+    <img src="assets/Delicious Indian Curry Chicken Recipe.jpeg">
+    <h3>Chicken Curry</h3>
+    <button onclick="viewRecipe('chickencurry')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card VegBiryani">
+    <img src="assets/Easy Vegetable Biryani.jpeg">
+    <h3>Veg Biryani</h3>
+    <button onclick="viewRecipe('vegbiryani')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card DalBhat">
+    <img src="assets/Dal Bhat 😚.jpeg">
+    <h3>Dal Bhat</h3>
+    <button onclick="viewRecipe('dalbhat')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card PaneerButterMasala">
+    <img src="assets/Butter Paneer _ Recipes _ Eitan Bernath.jpeg">
+    <h3>Paneer Butter Masala</h3>
+    <button onclick="viewRecipe('paneerbuttermasala')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card FriedRice">
+    <img src="assets/This easy homemade Beef Fried Rice recipe includes tender strips of sirloin, vegetables, eggs, crisp rice, and a rich, full-flavored sauce_ Serve as a side or enjoy this stir fry all on its own as a complete meal.jpeg">
+    <h3>Fried Rice</h3>
+    <button onclick="viewRecipe('friedrice')">View Recipe</button>
+  </div>
+</div>
+<h2 class="text" style="text-decoration: underline;">DINNER</h2>
+<div class="dinner-section">
+
+  <div class="recipe-card ButterChicken">
+    <img src="assets/Restaurant Style Butter Chicken Masala (Murgh Makhani).jpeg">
+    <h3>Butter Chicken</h3>
+    <button onclick="viewRecipe('butterchicken')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card RotiSabzi">
+    <img src="assets/Roti & Sabji.jpeg">
+    <h3>Roti Sabzi</h3>
+    <button onclick="viewRecipe('rotisabzi')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card Chowmein">
+    <img src="assets/Veg Chowmein (Street Style Chow Mein Recipe) - Cook With Manali.jpeg">
+    <h3>Chowmein</h3>
+    <button onclick="viewRecipe('chowmein')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card Thukpa">
+    <img src="assets/Thukpa.jpeg">
+    <h3>Thukpa</h3>
+    <button onclick="viewRecipe('thukpa')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card FishCurry">
+    <img src="assets/Goan Fish Curry Recipe Offers You Taste Of Coastal Paradise.jpeg">
+    <h3>Fish Curry</h3>
+    <button onclick="viewRecipe('fishcurry')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card RajmaChawal">
+    <img src="assets/download (3).jpeg">
+    <h3>Rajma Chawal</h3>
+    <button onclick="viewRecipe('rajmachawal')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card ChickenFriedRice">
+    <img src="assets/This easy homemade Beef Fried Rice recipe includes tender strips of sirloin, vegetables, eggs, crisp rice, and a rich, full-flavored sauce_ Serve as a side or enjoy this stir fry all on its own as a complete meal.jpeg">
+    <h3>Chicken Fried Rice</h3>
+    <button onclick="viewRecipe('chickenfriedrice')">View Recipe</button>
+  </div>
+
+  <div class="recipe-card AlooParatha">
+    <img src="assets/A stack of aloo paratha with butter melting on top placed on a white plate_.jpeg">
+    <h3>Aloo Paratha</h3>
+    <button onclick="viewRecipe('alooparatha')">View Recipe</button>
+  </div>
+
+</div>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

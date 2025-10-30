@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/view_recipe.css" />
+    
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- icon import -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+    <title>Recipe Hub | Home</title>
+</head>
+
+<body>
+    <div class="nav_container">
+        <h1 class="title"><span class="material-symbols-outlined">
+                fork_spoon
+            </span> RECIPE HUB</h1>
+        <div class="nav_bar">
+            <div class="home">
+                <a href="index.html" style="color: white; text-decoration: none; font-size: 20px">
+                    <span class="material-symbols-outlined"> home </span>
+                    Home</a>
+            </div>
+            <div class="recipe">
+                <a href="recipe_page.html" style="color: white; text-decoration: none; font-size: 20px"><span
+                        class="material-symbols-outlined"> chef_hat</span>Recipes</a>
+            </div>
+            <div class="login">
+                <a href="login.html" style="color: white; text-decoration: none; font-size: 20px"><span
+                        class="material-symbols-outlined">
+                        account_circle
+                    </span>login</a>
+            </div>
+            <div class="about">
+                <a href="about_us.html" style="color: white; text-decoration: none; font-size: 20px"><span
+                        class="material-symbols-outlined">
+                        contact_page
+                    </span>About Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <h1 id="recipe-name"></h1>
+
+
+        <h2>Ingredients</h2>
+        <ul id="ingredients-list"></ul>
+
+        <h2>Cooking Time</h2>
+        <p id="cooking-time"></p>
+
+        <h2>Procedure</h2>
+        <ol id="procedure-list"></ol>
+    </div>
+
+    <script src="/js/recipeData.js"></script>
+    <script src="/js/viewRecipe.js"></script>
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    const recipeKey = params.get("name");
+    const recipe = recipes[recipeKey];
+
+    if (recipe) {
+      document.getElementById("recipe-name").textContent = recipe.name;
+      document.getElementById("recipe-img").src = recipe.image;
+      document.getElementById("cooking-time").textContent = recipe.cookingTime;
+
+      const ingredientsList = document.getElementById("ingredients-list");
+      recipe.ingredients.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ingredientsList.appendChild(li);
+      });
+
+      const procedureList = document.getElementById("procedure-list");
+      recipe.procedure.forEach(step => {
+        const li = document.createElement("li");
+        li.textContent = step;
+        procedureList.appendChild(li);
+      });
+    } else {
+      document.body.innerHTML = "<h2>Recipe not found!</h2>";
+    }
+  </script>
+   
+</body>
+
+
+</html>

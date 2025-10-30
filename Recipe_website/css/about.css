@@ -1,0 +1,27 @@
+@import url(variables.css);
+.about-section {
+  background-color: var(--muted-text);
+  border-radius: 7px;
+  width: 90%;
+  margin: 50px auto;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.member:hover {
+  background-color: white;
+  transform: translateY(-3px);
+}
+.member {
+  background-color: var(--card-bg);
+  text-align: center;
+  width: 80%;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.5s;
+}

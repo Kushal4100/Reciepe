@@ -1,0 +1,19 @@
+@import url(variables.css);
+.recipe-container {
+  background-color: var(--card-bg);
+  border-radius: 7px;
+  margin: 10px auto;
+  padding: 10px;
+  gap: 10px;
+  transition: background-color 0.5s;
+}
+body {
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+}
+#recipes_container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px; 
+  padding: 20px;
+}

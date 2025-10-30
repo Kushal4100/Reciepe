@@ -1,0 +1,170 @@
+@import url(variables.css);
+
+.title {
+  font-family: "Playfair", serif;
+  font-size: 40px;
+  text-align: center;
+  color: var(--text-color)
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.nav_container {
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  margin: 0px auto;
+  height: 120px;
+  position: sticky;
+  top: 2px;
+}
+
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+}
+
+.nav_bar a {
+  display: inline-flex;
+  gap: 6px;
+  color: lightgray;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.home {
+  transition: background-color 0.5s;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.home:hover {
+  background-color: #1e1e1e;
+  transform: translateY(-3px);
+}
+
+.recipe {
+  transition: background-color 0.5s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+}
+
+.recipe:hover {
+  background-color: #1e1e1e;
+  transform: translateY(-3px);
+}
+
+.login {
+  transition: background-color 0.5s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+}
+
+.login:hover {
+  background-color: #1e1e1e;
+  transform: translateY(-3px);
+}
+
+.about {
+  transition: background-color 0.5s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+}
+
+.about:hover {
+  background-color: #1e1e1e;
+  transform: translateY(-3px);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: var(--text-color);
+  transition: color 0.5;
+  cursor: pointer;
+}
+
+.text:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.search_bar {
+  width: 600px;
+  margin: 0px auto;
+  background-color: white;
+  color: var(--text-color);
+  border-radius: 7px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+input {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  ;
+
+}
+
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button .material-symbols-outlined {
+  width: 25px;
+  color: #555;
+  cursor: pointer;
+}
+
+.Popular-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
